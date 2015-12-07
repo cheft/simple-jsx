@@ -1,0 +1,26 @@
+{
+  "name": "simple-jsx",
+  "version": "0.0.1",
+  "description": "simple-jsx by pegjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --colors --content-base ./ --hot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cheft/simple-jsx.git"
+  },
+  "author": "cheft",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cheft/simple-jsx/issues"
+  },
+  "homepage": "https://github.com/cheft/simple-jsx#readme",
+  "devDependencies": {
+    "jsdom": "^7.2.0"
+  },
+  "dependencies": {
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
+  }
+}
