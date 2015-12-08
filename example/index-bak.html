@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="pragma" content="no-cache" />
+  <meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
+  <meta http-equiv="expires" content="Thu, 01 Jan 1970 00:00:01 GMT" />
+  <meta http-equiv="expires" content="0" />
+  <title>TEST</title>
+  <script>
+    var _ = {};
+    _.map = function(array, fun) {
+      var res = [];
+      for (var i = 0; i < array.length; i++) {
+        var o = array[i];
+        res[i] = fun.call(o, o);
+      };
+      return res;
+    }
+
+    var a = [1, 2, 3];
+    var b = _.map(a, function(i) {
+      return 'a' + i;
+    });
+    // alert(b.join(','));
+
+    // Array.prototype.map = function (fun) {
+    //   var t = this;
+    //   var len = t.length;
+    //   var res = []; res.length = len;
+    //   var thisp = arguments[1], i;
+    //   for (i = 0; i < len; i++) {
+    //     if (i in t) {
+    //       res[i] = fun.call(thisp, t[i], i, t);
+    //     }
+    //   }
+
+    //   return res;
+    // };
+  </script>
+</head>
+
+<body>
+  <div id="time"></div>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
